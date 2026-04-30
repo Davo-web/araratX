@@ -15,7 +15,7 @@
         </div>
 
         <nav>
-            <a href="#" class="nav_link">
+            <a href="#tours" class="nav_link">
                 <p class="nav_item">Туры</p>
             </a>
             <a href="#" class="nav_link">
@@ -31,17 +31,127 @@
     </header>
 
     <main>
-        <video autoplay muted loop playsinline poster="./imgs/bg_img.png" class="main_bg">
-            <source src="./vid/hayastan.mp4" type="video/mp4">
-        </video>
-        <div class="name">
-            <p class="title">ARARAT X</p>
-            <p class="subtitle">Экстремальные туры в Армении</p>
-        </div>
-        <button class="main_btn">Начать приключение</button>
-        <p class="main_stats">10+ маршрутов   |   5 лет опыта   |   1000+ клиентов</p>
-    </main>
+        <section class="hero">
+            <video autoplay muted loop playsinline poster="./imgs/bg_img.png" class="hero_bg">
+                <source src="./vid/hayastan.mp4" type="video/mp4">
+            </video>
+            <div class="name">
+                <h1 class="title">ARARAT X</h1>
+                <h2 class="subtitle">Экстремальные туры в Армении</h2>
+            </div>
+            <a href="#tours" class="hero-link">
+                <button class="hero_btn">Начать приключение</button>
+            </a>
+            <p class="hero_stats">10+ маршрутов   |   5 лет опыта   |   1000+ клиентов</p>
+        </section>
 
+        <section class="tours" id="tours">
+            <h2 class="section_title" >Туры</h2>
+            <div class="tours_card-box">
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg.png" alt="cave" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Подземелья Магила</h3>
+                        <h4 class="tours_card-subtitle">Спелео-тур: пещера Магила </h4>
+                        <p class="tours_card-stat">Глубина: 1.7км</p>
+                        <p class="tours_card-level">Сложность: 3/5</p>
+                        <p class="tours_card-description">Настоящий подземный лабиринт. Забудь о свете дня: узкие лазы и тишина, которую прерывает только твой пульс.</p>
+                    </div>
+                    
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_2.png" alt="mountain" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Вершина Арагаца</h3>
+                        <h4 class="tours_card-subtitle">Восхождение: гора Арагац</h4>
+                        <p class="tours_card-stat">Высота: 4090м</p>
+                        <p class="tours_card-level">Сложность: 5/5</p>
+                        <p class="tours_card-description">Штурм вершины. Самая высокая точка Армении и технический подъем для тех, кто готов бросить вызов высоте.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_3.png" alt="river" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Бурный Дебед</h3>
+                        <h4 class="tours_card-subtitle">Рафтинг: Река Дебед</h4>
+                        <p class="tours_card-stat">Пороги: III класс</p>
+                        <p class="tours_card-level">Сложность: 3/5</p>
+                        <p class="tours_card-description">Ледяной поток и бешеная динамика. Командная работа или оверкиль - здесь река решает, кто дойдет до финиша.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_4.png" alt="zipline over the forest" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Пропасть Енокавана</h3>
+                        <h4 class="tours_card-subtitle">Зиплайн: село Енокаван</h4>
+                        <p class="tours_card-stat">Высота: 300 м</p>
+                        <p class="tours_card-level">Сложность: 2/5</p>
+                        <p class="tours_card-description">Свободный полет над бездной. Почувствуй скорость и масштаб каньона, пролетая над верхушками вековых деревьев.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_5.png" alt="volcanoes with a lake" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Вулканы Гегама</h3>
+                        <h4 class="tours_card-subtitle">Эндуро-тур: Гегамский хребет</h4>
+                        <p class="tours_card-stat">Маршрут: 150 км</p>
+                        <p class="tours_card-level">Сложность: 5/5</p>
+                        <p class="tours_card-description">Прохват на байках через кратерные озера. Трасса, где выживают только лучшие райдеры и техника.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_6.png" alt="mountain" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Скалы Нораванка</h3>
+                        <h4 class="tours_card-subtitle">Альпинизм: обл. Вайоц Дзор</h4>
+                        <p class="tours_card-stat">Стены: 100 м</p>
+                        <p class="tours_card-level">Сложность: 4/5</p>
+                        <p class="tours_card-description">Рыжие отвесные скалы, проверяющие тебя на прочность. Взгляни на каньон, держась за узкие зацепы.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_7.png" alt="mountain" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Каньоны Арени</h3>
+                        <h4 class="tours_card-subtitle">Каньонинг: село Арени</h4>
+                        <p class="tours_card-stat">Спуски: до 20 м</p>
+                        <p class="tours_card-level">Сложность: 4/5</p>
+                        <p class="tours_card-description">Прыжки в водопады и спуск на веревках. Пробивайся через теснины и ледяные ванны дикого ущелья.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_8.png" alt="paraglider" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Небо Цахкадзора</h3>
+                        <h4 class="tours_card-subtitle">Параплан: Цахкадзор</h4>
+                        <p class="tours_card-stat">Полет: 30 мин</p>
+                        <p class="tours_card-level">Сложность: 2/5</p>
+                        <p class="tours_card-description">Шагни в бездну и поймай восходящий поток. Армения развернется под тобой как на ладони.</p>
+                    </div>
+                </article>
+
+                <article class="tours_card">
+                    <img src="./imgs/tour_card_bg_9.png" alt="mountain" class="tours_card-img">
+                    <div class="tours_card-text">
+                        <h3 class="tours_card-title">Перевалы Сюника</h3>
+                        <h4 class="tours_card-subtitle">Джип-тур: обл. Сюник</h4>
+                        <p class="tours_card-stat">Маршрут: 200 км</p>
+                        <p class="tours_card-level">Сложность: 3/5</p>
+                        <p class="tours_card-description">Прорыв через заброшенные горные тропы. Там, где кончаются дороги, начинается настоящая Армения.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -16,6 +16,10 @@ button {
     outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Montserrat, Orbitron, sans-serif;
     color: #000;
@@ -28,7 +32,7 @@ body {
 header {
     height: 70px;
     width: 1100px;
-    background-color: rgb(237, 242, 244, .5);
+    background-color: rgb(237, 242, 244, .6);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,13 +60,36 @@ nav {
     gap: 30px;
 }
 
+.nav_item {
+    position: relative;
+}
+
+.nav_item::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1.5px;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.nav_item:hover::after{
+    width: 100%;
+}
 
 
 
 
 
 
-main {
+
+
+
+
+
+.hero {
     position: relative;
     height: 100vh;
     display: flex;
@@ -77,7 +104,7 @@ main {
     overflow: hidden;
 }
 
-.main_bg {
+.hero_bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,13 +123,14 @@ main {
     top: 20px
 }
 
-.name p {
-    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+.name h1, .name h2 {
+    font-weight: 400;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .title {
     font-family: Orbitron, sans-serif;
-    font-size: 80px;
+    font-size: 88px;
     letter-spacing: 3%;
 }
 
@@ -112,18 +140,99 @@ main {
     font-size: 30px;
 }
 
-.main_btn {
-    /* font-family: Montserrat; */
+.hero_btn {
+    font-family: Montserrat;
     padding: 14px 25px;
     border-radius: 15px;
     font-size: 20px;
     background-color: #F5F8F9;
     position: relative;
     top: 60px;
+    transition: transform .3s ease-in;
 }
 
-.main_stats {
+.hero_btn:hover {
+    transform: scale(1.1);
+}
+
+.hero_stats {
     position: absolute;
     bottom: 24px;
     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 194px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.tours_card-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; 
+    gap: 50px;
+}
+
+.tours_card {
+    width: 340px;
+    height: 510px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease-in-out;
+}
+
+.tours_card:hover {
+    transform: scale(1.03);
+}
+
+.tours_card:hover .tours_card-img{
+    opacity: .9;
+}
+
+.tours_card-text {
+    padding: 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    position: relative;
+    top: -30px;
+}
+
+.tours_card-title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.tours_card-subtitle{
+    font-weight: 400;
+}
+
+.tours_card-img {
+    width: 100%;
 }
