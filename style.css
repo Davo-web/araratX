@@ -8,6 +8,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 button {
@@ -136,7 +137,7 @@ nav {
 
 .subtitle {
     position: relative;
-    top: -20px;
+    top: -15px;
     font-size: 30px;
 }
 
@@ -236,3 +237,219 @@ nav {
 .tours_card-img {
     width: 100%;
 }
+
+
+
+
+
+
+.safety {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B1B1B;
+    padding: 40px 0 70px 0;
+    margin-bottom: 80px;
+}
+
+.safety_title {
+    color: #fff;
+}
+
+.safety-card_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.safety-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    height: 275px;
+    padding: 20px 15px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.safety-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    top: 80px;
+}
+
+.safety-card_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.safety-card_title {
+    width: 220px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.safety-card_subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.safety-card_description {
+    font-size: 12px;
+    color: #737373;
+}
+
+
+
+
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.aboutUs-card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.aboutUs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 50px 100px;
+    width: 450px;
+    height: 360px;
+    border-radius: 50px;
+    border: 5px solid #000;
+    gap: 50px;
+    transition: transform .3s ease-in-out;
+}
+
+.aboutUs-card-title {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.aboutUs-card-text {
+    font-size: 18px;
+}
+
+.aboutUs-card-first {
+    background-color: #D9D9D9;
+}
+
+.aboutUs-card-second {
+    background-color: #FF5722;
+}
+
+.aboutUs-slogan {
+    font-size: 20px;
+}
+
+.aboutUs-slogan span {
+    color: #FF5722;
+    font-weight: 700;
+}
+
+.flag {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.aboutUs-card:hover{
+    transform:translateY(-20px);
+}
+
+
+
+
+
+
+
+
+
+.contacts {
+    padding: 80px 0 100px 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-title {
+    color: #fff;
+}
+
+.contacts-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.contacts-card a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+.contacts-card a img {
+    transition: transform .2s ease-in;
+    width: 80px;
+    height: 80px;
+}
+
+.contacts-card a img:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: #292929;
+    display: flex;
+}
+
+footer p {
+    margin: auto auto;
+    color: #fff;
+    font-size: 14px;
+}
+
